@@ -1,0 +1,115 @@
+extends layout
+
+block content
+    doctype html
+    head
+        meta(charset='utf-8')
+        link(rel='stylesheet' href='/stylesheets/Productos/styleguide.css')
+        link(rel='stylesheet' href='/stylesheets/Productos/style.css')
+
+    .productos
+        .navbar
+            .container
+                .content
+                    img.color-dark(src='/img/color-dark.svg')
+                .column
+                    .nav-links
+                        each link in navbar.links
+                            .link
+                                a(href=link.href)= link.name
+                    .actions
+                        .style-secondary
+                            button.button= buttons.login
+                        .style-primary-small
+                            button.text-wrapper= buttons.register
+
+        .div
+            .title
+                .section-title
+                    .tagline-wrapper
+                        .tagline= hero.tagline
+                    .content-2
+                        .heading= hero.title
+                        p.text= hero.description
+                .style-secondary-wrapper
+                    .button-wrapper
+                        button.button-2= buttons.viewAll
+            .content-3
+                .content-wrapper
+                    each product in products
+                        .product
+                            img.placeholder-image(src=product.image alt=product.name)
+                            .div-2
+                                .content-5
+                                    .div-3
+                                        .heading-2= product.name
+                                        .text-2= product.color
+                                    .price= "$" + product.price
+                                .div-wrapper
+                                    a.button.button(href=product.href) Ver Producto
+
+        .div
+            .section-title-2
+                .tagline-wrapper
+                    .tagline-2= quality.tagline
+                .content-7
+                    p.heading-3= quality.title
+                    p.p= quality.description
+            .row-wrapper
+                .row
+                    each feature in quality.features
+                        .column-2
+                            img.icon-relume(src=feature.icon alt=feature.title)
+                            .content-7
+                                p.heading-4= feature.title
+                                p.text-3= feature.description
+
+        .container-wrapper
+            .container-2
+                .div-5
+                    .div-6
+                        .div-2
+                            .tagline-wrapper
+                                .tagline= benefits.tagline
+                            .content-8
+                                p.heading= benefits.title
+                                p.text= benefits.description
+                        .div-2
+                            .row-2
+                                each item in benefits.list
+                                    .div-7
+                                        .text-wrapper-2= item.title
+                                        p.text-wrapper-3= item.description
+
+        .div
+            .container-4
+                .section-title-3
+                    .heading-3 Preguntas
+                    p.p Aquí encontrarás respuestas a las preguntas más frecuentes sobre nuestros productos y servicios.
+                .accordion-list
+                    each faq in faqs
+                        .div-8
+                            .question
+                                p.question-2= faq.question
+                                img.icon(src='/img/icon.svg')
+                            .answer
+                                p.text-5= faq.answer
+
+        .footer
+            .container-5
+                .div-9
+                    .content-10
+                        .join-our-newsletter= footer.newsletter
+                        p.text-wrapper-3= footer.privacyPolicy
+                    .actions-3
+                        .form
+                            .type-default
+                                .placeholder Ingresa tu correo
+                            .style-secondary-5
+                                button.button-4= buttons.subscribe
+                .links
+                    .div-6
+                        .divider
+                        .div-9
+                            .div-4
+                                p.element-relume-all!= footer.rights

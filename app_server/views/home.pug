@@ -1,0 +1,108 @@
+extends layout
+
+block content
+    doctype html
+    head
+        meta(charset='utf-8')
+        link(rel='stylesheet' href='/stylesheets/Home/styleguide.css')
+        link(rel='stylesheet' href='/stylesheets/Home/style.css')
+
+    body
+        .inicio
+            .navbar
+                .container
+                    .content
+                        img.color-dark(src='/img/color-dark-2.svg' alt='Color Dark Logo')
+                    .column
+                        .nav-links
+                            each link in navbar.links
+                                .link
+                                    a(href=link.href)= link.name
+                        .actions
+                            a(href=buttons.login.href)
+                                .style-secondary
+                                    button.button(aria-label=buttons.login.text)= buttons.login.text
+                            a(href=buttons.register.href)
+                                .style-primary-small
+                                    button.text-wrapper(aria-label=buttons.register.text)= buttons.register.text
+
+            .div
+                .div-2
+                    .content-2
+                        p.medium-length-hero= hero.title
+                        p.p= hero.description
+                    .actions-2
+                        .button-wrapper
+                            button.text-wrapper(aria-label=buttons.buy)= buttons.buy
+                        .div-wrapper
+                            button.button(aria-label=buttons.seeMore)= buttons.seeMore
+                    img.placeholder-image(src='/img/placeholder-img.jpg' alt='Placeholder Image')
+
+            .div
+                .section-title
+                    .tagline-wrapper
+                        .tagline= quality.tagline
+                    .content-2
+                        .heading= quality.title
+                        p.p= quality.description
+                
+                .row-wrapper
+                    .row
+                        each feature in quality.features
+                            .column-2
+                                img.icon-relume(src=feature.icon alt=feature.title)
+                                .content-2
+                                    p.heading-2= feature.title
+                                    p.text= feature.description
+
+            .div-4
+                .container-2
+                    .content-3
+                        .div-5
+                            .div-6
+                                .tagline-wrapper
+                                    .tagline-2= benefits.tagline
+                                .content-4
+                                    p.heading-3= benefits.title
+                                    p.text-2= benefits.description
+                        .list
+                            each item in benefits.list
+                                .list-item
+                                    img.icon-relume-2(src=item.icon alt=item.text)
+                                    p.lorem-ipsum-dolor= item.text
+
+            .div-4
+                .section-title
+                    .tagline-wrapper
+                        .tagline-2= contact.tagline
+                    .content-4
+                        .heading-3= contact.title
+                        p.text-2= contact.description
+                
+                .content-8
+                    .row-2
+                        each method in contact.methods
+                            .div-6
+                                img.img-2(src=method.icon alt=method.title)
+                                .div-8
+                                    .heading-5= method.title
+                                    .text-wrapper-2= method.text
+                                    .link-2= method.value
+
+            .footer
+                .container-4
+                    .div-9
+                        .content-9
+                            .join-our-newsletter= footer.newsletter
+                            p.text-wrapper-2= footer.privacyPolicy
+                        .actions-3
+                            .form
+                                .type-default
+                                    .placeholder Ingresa tu correo
+                                .style-secondary-3
+                                    button.button-4(aria-label=buttons.subscribe)= buttons.subscribe
+                            .container-5
+                                p.by-subscribing-you= footer.privacyPolicy
+                    .links
+                        .color-dark-wrapper
+                            img.color-dark-2(src='/img/color-dark.svg' alt='Color Dark')

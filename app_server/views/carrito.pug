@@ -1,0 +1,126 @@
+extends layout
+
+block content
+    doctype html
+    head
+        meta(charset='utf-8')
+        link(rel='stylesheet' href='/stylesheets/Carrito/styleguide.css')
+        link(rel='stylesheet' href='/stylesheets/Carrito/carrito.css')
+
+    .carrito-de-compra-y
+        .navbar
+            .container
+                .content
+                    img.color-dark(src='/img/color-dark.svg')
+                .column
+                    .nav-links
+                        each link in navbar.links
+                            .link
+                                a(href=link.href)= link.name
+                .actions
+                    .style-secondary
+                        button.button= buttons.login
+                    .style-primary-small
+                        button.text-wrapper= buttons.register
+
+        .div
+            .content-2
+                .div-2
+                    .tagline-wrapper
+                        .tagline= checkout.title
+                    p.heading= checkout.heading
+                .div-3
+                    .div-4
+                        p.text= checkout.description
+                    .div-5
+                        .button-wrapper
+                            button.button= checkout.updateButton
+                        .style-link-small
+                            button.button= checkout.checkoutButton
+
+        .div
+            p.heading-3 Cálculo automático de impuestos y envío para una experiencia de compra fluida.
+            .row-wrapper
+                .row-2
+                    each feature in features
+                        .div-3
+                            .div-6
+                                img.img-2(src=feature.icon)
+                                p.heading-4= feature.title
+                                p.p= feature.description
+                            .action
+                                .style-link-small
+                                    button.button Más
+                                    img.img(src='/img/chevron-right.svg')
+
+        .div
+            .column-2
+                .div-6
+                    .heading-5= payment.heading
+                    p.text-2= payment.description
+                .actions-2
+                    .div-wrapper
+                        button.text-wrapper= payment.payButton
+                    .style-secondary-2
+                        button.button= payment.cancelButton
+
+        .div
+            .container-2
+                .div-3
+                    .div-6
+                        p.heading-5= shipping.heading
+                        p.text-2= shipping.description
+                    .actions-3
+                        .form
+                            .type-default
+                                .placeholder Ingresa tu correo
+                            .style-primary-small-2
+                                button.button-2= shipping.registerButton
+                        p.by-clicking-sign-up= shipping.termsText
+                img.placeholder-image-2(src='/img/placeholder-img.jpg')
+
+        .div
+            .section-title
+                .tagline-wrapper
+                    .tagline= support.tagline
+                .div-6
+                    .heading-5= support.heading
+                    p.text-2= support.description
+            .row-wrapper
+                .row-3
+                    each method in support.methods
+                        .content-4
+                            img.img-2(src=method.icon)
+                            .div-6
+                                .content-3
+                                    .heading-6= method.title
+                                    p.p= method.text
+                                .link-2= method.value
+
+        .footer
+            .container-3
+                .div-7
+                    .content-5
+                        .join-our-newsletter= footer.newsletter
+                        p.p= footer.privacyPolicy
+                    .actions-4
+                        .form
+                            .type-default
+                                .placeholder Ingresa tu correo
+                            .style-secondary-3
+                                button.button-3 Suscribirse
+                .links
+                    .color-dark-wrapper
+                        img.color-dark-2(src='/img/color-dark-2.svg')
+                    each column in footer.links
+                        .div-2
+                            .text-wrapper-2= column.title
+                            .footer-links
+                                each link in column.links
+                                    .link-3
+                                        .text-wrapper-3= link
+                .div-4
+                    .divider
+                    .div-7
+                        .div-5
+                            p.element-relume-all!= footer.rights

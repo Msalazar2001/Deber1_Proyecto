@@ -1,0 +1,1196 @@
+.inicio {
+    display: flex; /* Cambié inline-flex por flex para mayor consistencia */
+    flex-direction: column;
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+    position: relative;
+    margin: 0 auto; /* Si defines un ancho fijo, esto lo centra en la ventana */
+    width: 100%; /* O el ancho que desees para toda la página */
+  }
+  
+    
+    .inicio .navbar {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 72px;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 64px;
+      position: relative;
+      background-color: var(--semantic-background-color-primary);
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-color: var(--semantic-border-primary);
+    }
+    
+    .inicio .container {
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .content {
+      width: 80px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      position: relative;
+    }
+    
+    .inicio .color-dark {
+      position: relative;
+      width: 84px;
+      height: 36px;
+      margin-left: -2.00px;
+      margin-right: -2.00px;
+    }
+    
+    .inicio .column {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .nav-links {
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 32px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .link-text {
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      font-family: var(--text-regular-normal-font-family);
+      font-weight: var(--text-regular-normal-font-weight);
+      color: var(--semantic-link-primary);
+      font-size: var(--text-regular-normal-font-size);
+      letter-spacing: var(--text-regular-normal-letter-spacing);
+      line-height: var(--text-regular-normal-line-height);
+      white-space: nowrap;
+      font-style: var(--text-regular-normal-font-style);
+    }
+    
+    .inicio .nav-link-dropdown {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .img {
+      position: relative;
+      width: 24px;
+      height: 24px;
+    }
+    
+    .inicio .actions {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .style-secondary {
+      display: inline-flex;
+      padding: 8px 20px;
+      flex: 0 0 auto;
+      margin-left: -1.00px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      position: relative;
+      margin-top: -1.00px;
+      margin-bottom: -1.00px;
+      border: 1px solid;
+      border-color: var(--primitive-color-neutral-black);
+    }
+    
+    .inicio .button {
+      all: unset;
+      box-sizing: border-box;
+      position: relative;
+      width: fit-content;
+      font-family: "Roboto-Regular", Helvetica;
+      font-weight: 400;
+      color: var(--semantic-text-primary);
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 24px;
+      white-space: nowrap;
+    }
+    
+    .inicio .style-primary-small {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 8px 20px;
+      position: relative;
+      flex: 0 0 auto;
+      margin-top: -2.00px;
+      margin-bottom: -2.00px;
+      margin-right: -2.00px;
+      background-color: var(--primitive-color-neutral-black);
+      border: 1px solid;
+      border-color: var(--primitive-color-neutral-black);
+    }
+    
+    .inicio .text-wrapper {
+      all: unset;
+      box-sizing: border-box;
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      margin-left: -1.00px;
+      font-family: "Roboto-Regular", Helvetica;
+      font-weight: 400;
+      color: var(--semantic-text-alternate);
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 24px;
+      white-space: nowrap;
+    }
+    
+    .inicio .div {
+      display: flex;
+      flex-direction: column;
+      width: 1440px;
+      align-items: center;
+      gap: 80px;
+      padding: 112px 64px;
+      position: relative;
+      flex: 0 0 auto;
+      background-color: var(--semantic-background-color-primary);
+    }
+    
+    .inicio .div-2 {
+      display: flex;
+      flex-direction: column;
+      width: 1440px;
+      align-items: center;
+      gap: 32px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .content-2 {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+      display: flex;
+      position: relative;
+    }
+    
+    .inicio .medium-length-hero {
+      position: relative;
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-family: var(--heading-desktop-h1-font-family);
+      font-weight: var(--heading-desktop-h1-font-weight);
+      color: var(--semantic-text-primary);
+      font-size: var(--heading-desktop-h1-font-size);
+      text-align: center;
+      letter-spacing: var(--heading-desktop-h1-letter-spacing);
+      line-height: var(--heading-desktop-h1-line-height);
+      font-style: var(--heading-desktop-h1-font-style);
+    }
+    
+    .inicio .p {
+      font-size: var(--text-medium-normal-font-size);
+      text-align: center;
+      line-height: var(--text-medium-normal-line-height);
+      position: relative;
+      align-self: stretch;
+      font-family: var(--text-medium-normal-font-family);
+      font-weight: var(--text-medium-normal-font-weight);
+      color: var(--semantic-text-primary);
+      letter-spacing: var(--text-medium-normal-letter-spacing);
+      font-style: var(--text-medium-normal-font-style);
+    }
+    
+    .inicio .actions-2 {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 16px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .button-wrapper {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      position: relative;
+      flex: 0 0 auto;
+      margin-top: -2.00px;
+      margin-bottom: -2.00px;
+      margin-left: -2.00px;
+      background-color: var(--primitive-color-neutral-black);
+      border: 1px solid;
+      border-color: var(--primitive-color-neutral-black);
+    }
+    
+    .inicio .div-wrapper {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      position: relative;
+      flex: 0 0 auto;
+      margin-top: -1.00px;
+      margin-bottom: -1.00px;
+      margin-right: -1.00px;
+      border: 1px solid;
+      border-color: var(--primitive-color-neutral-black);
+    }
+    
+    .inicio .placeholder-image {
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      height: 738px;
+      object-fit: cover;
+    }
+    
+    .inicio .section-title {
+      display: flex;
+      flex-direction: column;
+      width: 768px;
+      align-items: center;
+      gap: 16px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .tagline-wrapper {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .tagline {
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      font-family: var(--heading-desktop-tagline-font-family);
+      font-weight: var(--heading-desktop-tagline-font-weight);
+      color: var(--semantic-text-primary);
+      font-size: var(--heading-desktop-tagline-font-size);
+      text-align: center;
+      letter-spacing: var(--heading-desktop-tagline-letter-spacing);
+      line-height: var(--heading-desktop-tagline-line-height);
+      white-space: nowrap;
+      font-style: var(--heading-desktop-tagline-font-style);
+    }
+    
+    .inicio .heading {
+      font-size: var(--heading-desktop-h2-font-size);
+      text-align: center;
+      line-height: var(--heading-desktop-h2-line-height);
+      position: relative;
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-family: var(--heading-desktop-h2-font-family);
+      font-weight: var(--heading-desktop-h2-font-weight);
+      color: var(--semantic-text-primary);
+      letter-spacing: var(--heading-desktop-h2-letter-spacing);
+      font-style: var(--heading-desktop-h2-font-style);
+    }
+    
+    .inicio .row-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 64px;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+      display: flex;
+      position: relative;
+    }
+    
+    .inicio .row {
+      height: 276px;
+      gap: 48px;
+      align-self: stretch;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+    }
+    
+    .inicio .column-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      position: relative;
+      flex: 1;
+      flex-grow: 1;
+    }
+    
+    .inicio .icon-relume {
+      position: relative;
+      width: 48px;
+      height: 48px;
+    }
+    
+    .inicio .heading-2 {
+      font-size: var(--heading-desktop-h4-font-size);
+      text-align: center;
+      line-height: var(--heading-desktop-h4-line-height);
+      position: relative;
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-family: var(--heading-desktop-h4-font-family);
+      font-weight: var(--heading-desktop-h4-font-weight);
+      color: var(--semantic-text-primary);
+      letter-spacing: var(--heading-desktop-h4-letter-spacing);
+      font-style: var(--heading-desktop-h4-font-style);
+    }
+    
+    .inicio .text {
+      font-family: var(--text-regular-normal-font-family);
+      font-weight: var(--text-regular-normal-font-weight);
+      font-size: var(--text-regular-normal-font-size);
+      text-align: center;
+      line-height: var(--text-regular-normal-line-height);
+      position: relative;
+      align-self: stretch;
+      color: var(--semantic-text-primary);
+      letter-spacing: var(--text-regular-normal-letter-spacing);
+      font-style: var(--text-regular-normal-font-style);
+    }
+    
+    .inicio .div-3 {
+      display: inline-flex;
+      align-items: center;
+      gap: 24px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .style-secondary-2 {
+      display: inline-flex;
+      padding: 12px 24px;
+      flex: 0 0 auto;
+      margin-left: -1.00px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      position: relative;
+      margin-top: -1.00px;
+      margin-bottom: -1.00px;
+      border: 1px solid;
+      border-color: var(--primitive-color-neutral-black);
+    }
+    
+    .inicio .style-link-small {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .div-4 {
+      display: flex;
+      flex-direction: column;
+      width: 1440px;
+      align-items: flex-start;
+      gap: 80px;
+      padding: 112px 64px;
+      position: relative;
+      flex: 0 0 auto;
+      background-color: var(--semantic-background-color-primary);
+    }
+    
+    .inicio .container-2 {
+      align-items: center;
+      gap: 80px;
+      display: flex;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .content-3 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      flex: 1;
+      flex-grow: 1;
+      display: flex;
+      position: relative;
+    }
+    
+    .inicio .div-5 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+      display: flex;
+      position: relative;
+    }
+    
+    .inicio .div-6 {
+      align-self: stretch;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .tagline-2 {
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      font-family: var(--heading-desktop-tagline-font-family);
+      font-weight: var(--heading-desktop-tagline-font-weight);
+      color: var(--semantic-text-primary);
+      font-size: var(--heading-desktop-tagline-font-size);
+      letter-spacing: var(--heading-desktop-tagline-letter-spacing);
+      line-height: var(--heading-desktop-tagline-line-height);
+      white-space: nowrap;
+      font-style: var(--heading-desktop-tagline-font-style);
+    }
+    
+    .inicio .content-4 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+      display: flex;
+      position: relative;
+    }
+    
+    .inicio .heading-3 {
+      font-size: var(--heading-desktop-h2-font-size);
+      line-height: var(--heading-desktop-h2-line-height);
+      position: relative;
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-family: var(--heading-desktop-h2-font-family);
+      font-weight: var(--heading-desktop-h2-font-weight);
+      color: var(--semantic-text-primary);
+      letter-spacing: var(--heading-desktop-h2-letter-spacing);
+      font-style: var(--heading-desktop-h2-font-style);
+    }
+    
+    .inicio .text-2 {
+      font-family: var(--text-medium-normal-font-family);
+      font-weight: var(--text-medium-normal-font-weight);
+      font-size: var(--text-medium-normal-font-size);
+      line-height: var(--text-medium-normal-line-height);
+      position: relative;
+      align-self: stretch;
+      color: var(--semantic-text-primary);
+      letter-spacing: var(--text-medium-normal-letter-spacing);
+      font-style: var(--text-medium-normal-font-style);
+    }
+    
+    .inicio .list {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 0px;
+      display: flex;
+      gap: 16px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .list-item {
+      align-items: center;
+      display: flex;
+      gap: 16px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .icon-relume-2 {
+      position: relative;
+      width: 16px;
+      height: 16px;
+    }
+    
+    .inicio .lorem-ipsum-dolor {
+      position: relative;
+      flex: 1;
+      margin-top: -1.00px;
+      font-family: var(--text-regular-normal-font-family);
+      font-weight: var(--text-regular-normal-font-weight);
+      color: var(--semantic-text-primary);
+      font-size: var(--text-regular-normal-font-size);
+      letter-spacing: var(--text-regular-normal-letter-spacing);
+      line-height: var(--text-regular-normal-line-height);
+      font-style: var(--text-regular-normal-font-style);
+    }
+    
+    .inicio .placeholder-image-2 {
+      flex: 1;
+      flex-grow: 1;
+      height: 640px;
+      position: relative;
+      object-fit: cover;
+    }
+    
+    .inicio .card {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      padding: 48px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+      border: 1px solid;
+      border-color: var(--semantic-border-primary);
+    }
+    
+    .inicio .content-5 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      flex: 1;
+      flex-grow: 1;
+      display: flex;
+      position: relative;
+    }
+    
+    .inicio .heading-4 {
+      font-size: var(--heading-desktop-h3-font-size);
+      line-height: var(--heading-desktop-h3-line-height);
+      position: relative;
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-family: var(--heading-desktop-h3-font-family);
+      font-weight: var(--heading-desktop-h3-font-weight);
+      color: var(--semantic-text-primary);
+      letter-spacing: var(--heading-desktop-h3-letter-spacing);
+      font-style: var(--heading-desktop-h3-font-style);
+    }
+    
+    .inicio .content-6 {
+      flex-direction: column;
+      align-items: center;
+      gap: 48px;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+      display: flex;
+      position: relative;
+    }
+    
+    .inicio .container-3 {
+      align-items: center;
+      overflow: hidden;
+      display: flex;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 1312px;
+      align-items: center;
+      position: relative;
+    }
+    
+    .inicio .logo-color-dark {
+      position: relative;
+      width: 120px;
+      height: 48px;
+    }
+    
+    .inicio .quote {
+      position: relative;
+      align-self: stretch;
+      font-family: var(--heading-desktop-h5-font-family);
+      font-weight: var(--heading-desktop-h5-font-weight);
+      color: var(--semantic-text-primary);
+      font-size: var(--heading-desktop-h5-font-size);
+      text-align: center;
+      letter-spacing: var(--heading-desktop-h5-letter-spacing);
+      line-height: var(--heading-desktop-h5-line-height);
+      font-style: var(--heading-desktop-h5-font-style);
+    }
+    
+    .inicio .avatar {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      align-items: center;
+      gap: 16px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .avatar-image {
+      position: relative;
+      width: 56px;
+      height: 56px;
+      object-fit: cover;
+    }
+    
+    .inicio .div-7 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .text-3 {
+      margin-top: -1.00px;
+      font-family: var(--text-regular-semi-bold-font-family);
+      font-weight: var(--text-regular-semi-bold-font-weight);
+      font-size: var(--text-regular-semi-bold-font-size);
+      text-align: center;
+      line-height: var(--text-regular-semi-bold-line-height);
+      position: relative;
+      align-self: stretch;
+      color: var(--semantic-text-primary);
+      letter-spacing: var(--text-regular-semi-bold-letter-spacing);
+      font-style: var(--text-regular-semi-bold-font-style);
+    }
+    
+    .inicio .column-3 {
+      display: flex;
+      flex-direction: column;
+      width: 1312px;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+    }
+    
+    .inicio .content-7 {
+      flex-direction: column;
+      width: 768px;
+      align-items: center;
+      gap: 32px;
+      flex: 0 0 auto;
+      overflow: hidden;
+      display: flex;
+      position: relative;
+    }
+    
+    .inicio .logo-color-dark-2 {
+      position: relative;
+      width: 120px;
+      height: 48px;
+      margin-top: -783.00px;
+      margin-right: -2775.00px;
+    }
+    
+    .inicio .avatar-image-2 {
+      position: relative;
+      width: 56px;
+      height: 56px;
+      margin-top: -963.00px;
+      margin-right: -2743.00px;
+      object-fit: cover;
+    }
+    
+    .inicio .button-2 {
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .slider-dots {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 9px;
+      padding: 10px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .dot {
+      background-color: var(--primitive-color-neutral-black);
+      position: relative;
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+    }
+    
+    .inicio .dot-2 {
+      background-color: var(--primitive-color-neutral-neutral-lighter);
+      position: relative;
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+    }
+    
+    .inicio .section-title-2 {
+      width: 768px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .content-8 {
+      align-items: flex-start;
+      gap: 80px;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+      display: flex;
+      position: relative;
+    }
+    
+    .inicio .row-2 {
+      flex-direction: column;
+      width: 400px;
+      gap: 40px;
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+    }
+    
+    .inicio .img-2 {
+      position: relative;
+      width: 32px;
+      height: 32px;
+    }
+    
+    .inicio .div-8 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .heading-5 {
+      font-size: var(--heading-desktop-h6-font-size);
+      line-height: var(--heading-desktop-h6-line-height);
+      position: relative;
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-family: var(--heading-desktop-h6-font-family);
+      font-weight: var(--heading-desktop-h6-font-weight);
+      color: var(--semantic-text-primary);
+      letter-spacing: var(--heading-desktop-h6-letter-spacing);
+      font-style: var(--heading-desktop-h6-font-style);
+    }
+    
+    .inicio .text-wrapper-2 {
+      font-family: var(--text-regular-normal-font-family);
+      font-weight: var(--text-regular-normal-font-weight);
+      font-size: var(--text-regular-normal-font-size);
+      line-height: var(--text-regular-normal-line-height);
+      position: relative;
+      align-self: stretch;
+      color: var(--semantic-text-primary);
+      letter-spacing: var(--text-regular-normal-letter-spacing);
+      font-style: var(--text-regular-normal-font-style);
+    }
+    
+    .inicio .link-2 {
+      position: relative;
+      align-self: stretch;
+      font-family: var(--text-regular-link-font-family);
+      font-weight: var(--text-regular-link-font-weight);
+      color: var(--semantic-link-primary);
+      font-size: var(--text-regular-link-font-size);
+      letter-spacing: var(--text-regular-link-letter-spacing);
+      line-height: var(--text-regular-link-line-height);
+      text-decoration: underline;
+      font-style: var(--text-regular-link-font-style);
+    }
+    
+    .inicio .style-link-small-wrapper {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .style-link-small-2 {
+      display: flex;
+      width: 133px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .button-3 {
+      all: unset;
+      box-sizing: border-box;
+      position: relative;
+      width: fit-content;
+      margin-left: -21.00px;
+      font-family: "Roboto-Regular", Helvetica;
+      font-weight: 400;
+      color: var(--semantic-text-primary);
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 24px;
+      white-space: nowrap;
+    }
+    
+    .inicio .icon-chevron-right {
+      margin-right: -21.00px;
+      position: relative;
+      width: 24px;
+      height: 24px;
+    }
+    
+    .inicio .placeholder-image-3 {
+      width: 832px;
+      height: 516px;
+      position: relative;
+      object-fit: cover;
+    }
+    
+    .inicio .footer {
+      width: 1440px;
+      align-items: center;
+      gap: 80px;
+      padding: 80px 64px;
+      background-color: var(--semantic-background-color-primary);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .container-4 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 80px;
+      display: flex;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .div-9 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .content-9 {
+      flex-direction: column;
+      width: 500px;
+      align-items: flex-start;
+      display: flex;
+      position: relative;
+    }
+    
+    .inicio .join-our-newsletter {
+      position: relative;
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-family: var(--text-medium-semi-bold-font-family);
+      font-weight: var(--text-medium-semi-bold-font-weight);
+      color: var(--semantic-text-primary);
+      font-size: var(--text-medium-semi-bold-font-size);
+      letter-spacing: var(--text-medium-semi-bold-letter-spacing);
+      line-height: var(--text-medium-semi-bold-line-height);
+      font-style: var(--text-medium-semi-bold-font-style);
+    }
+    
+    .inicio .actions-3 {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      align-items: flex-start;
+      gap: 12px;
+      position: relative;
+    }
+    
+    .inicio .form {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .type-default {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px;
+      position: relative;
+      flex: 1;
+      flex-grow: 1;
+      margin-top: -1.00px;
+      margin-bottom: -1.00px;
+      margin-left: -1.00px;
+      border: 1px solid;
+      border-color: var(--primitive-color-neutral-black);
+    }
+    
+    .inicio .placeholder {
+      position: relative;
+      flex: 1;
+      font-family: "Roboto-Regular", Helvetica;
+      font-weight: 400;
+      color: var(--primitive-color-neutral-neutral);
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+    
+    .inicio .style-secondary-3 {
+      display: flex;
+      width: 121px;
+      padding: 12px 24px;
+      margin-right: -1.00px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      position: relative;
+      margin-top: -1.00px;
+      margin-bottom: -1.00px;
+      border: 1px solid;
+      border-color: var(--primitive-color-neutral-black);
+    }
+    
+    .inicio .button-4 {
+      all: unset;
+      box-sizing: border-box;
+      position: relative;
+      width: fit-content;
+      margin-left: -4.50px;
+      margin-right: -2.50px;
+      font-family: "Roboto-Regular", Helvetica;
+      font-weight: 400;
+      color: var(--semantic-text-primary);
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 24px;
+      white-space: nowrap;
+    }
+    
+    .inicio .container-5 {
+      align-items: flex-start;
+      gap: 4px;
+      display: flex;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .by-subscribing-you {
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      font-family: var(--text-tiny-normal-font-family);
+      font-weight: var(--text-tiny-normal-font-weight);
+      color: var(--semantic-text-primary);
+      font-size: var(--text-tiny-normal-font-size);
+      letter-spacing: var(--text-tiny-normal-letter-spacing);
+      line-height: var(--text-tiny-normal-line-height);
+      white-space: nowrap;
+      font-style: var(--text-tiny-normal-font-style);
+    }
+    
+    .inicio .privacy-policy {
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      margin-right: -170.00px;
+      font-family: var(--text-tiny-link-font-family);
+      font-weight: var(--text-tiny-link-font-weight);
+      color: var(--semantic-link-primary);
+      font-size: var(--text-tiny-link-font-size);
+      letter-spacing: var(--text-tiny-link-letter-spacing);
+      line-height: var(--text-tiny-link-line-height);
+      text-decoration: underline;
+      white-space: nowrap;
+      font-style: var(--text-tiny-link-font-style);
+    }
+    
+    .inicio .links {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .color-dark-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      flex: 1;
+      flex-grow: 1;
+    }
+    
+    .inicio .color-dark-2 {
+      position: relative;
+      width: 84px;
+      height: 36px;
+    }
+    
+    .inicio .column-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      position: relative;
+      flex: 1;
+      flex-grow: 1;
+    }
+    
+    .inicio .text-wrapper-3 {
+      position: relative;
+      align-self: stretch;
+      margin-top: -1.00px;
+      font-family: var(--text-regular-semi-bold-font-family);
+      font-weight: var(--text-regular-semi-bold-font-weight);
+      color: var(--semantic-text-primary);
+      font-size: var(--text-regular-semi-bold-font-size);
+      letter-spacing: var(--text-regular-semi-bold-letter-spacing);
+      line-height: var(--text-regular-semi-bold-line-height);
+      font-style: var(--text-regular-semi-bold-font-style);
+    }
+    
+    .inicio .link-3 {
+      display: flex;
+      align-items: flex-start;
+      padding: 8px 0px;
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      flex: 0 0 auto;
+    }
+    
+    .inicio .text-wrapper-4 {
+      position: relative;
+      flex: 1;
+      margin-top: -1.00px;
+      font-family: var(--text-small-normal-font-family);
+      font-weight: var(--text-small-normal-font-weight);
+      color: var(--semantic-link-primary);
+      font-size: var(--text-small-normal-font-size);
+      letter-spacing: var(--text-small-normal-letter-spacing);
+      line-height: var(--text-small-normal-line-height);
+      font-style: var(--text-small-normal-font-style);
+    }
+    
+    .inicio .divider {
+      position: relative;
+      align-self: stretch;
+      width: 100%;
+      height: 1px;
+      background-color: var(--semantic-border-primary);
+      border: 1px solid;
+      border-color: var(--semantic-border-primary);
+    }
+    
+    .inicio .element-relume-all {
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      font-family: var(--text-small-normal-font-family);
+      font-weight: var(--text-small-normal-font-weight);
+      color: var(--semantic-text-primary);
+      font-size: var(--text-small-normal-font-size);
+      letter-spacing: var(--text-small-normal-letter-spacing);
+      line-height: var(--text-small-normal-line-height);
+      white-space: nowrap;
+      font-style: var(--text-small-normal-font-style);
+    }
+    
+    .inicio .text-wrapper-5 {
+      position: relative;
+      width: fit-content;
+      margin-top: -1.00px;
+      font-family: var(--text-small-link-font-family);
+      font-weight: var(--text-small-link-font-weight);
+      color: var(--semantic-link-primary);
+      font-size: var(--text-small-link-font-size);
+      letter-spacing: var(--text-small-link-letter-spacing);
+      line-height: var(--text-small-link-line-height);
+      text-decoration: underline;
+      white-space: nowrap;
+      font-style: var(--text-small-link-font-style);
+    }
+    
+    .inicio .social-links {
+      display: inline-flex;
+      align-items: flex-start;
+      gap: 12px;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    .nav-links .link a {
+      font-family: inherit; /* Usa la misma fuente del navbar */
+      font-size: inherit; /* Usa el tamaño de fuente del navbar */
+      text-decoration: none; /* Elimina subrayado si hay */
+      color: inherit; /* Usa el mismo color que tenía el texto antes */
+  }

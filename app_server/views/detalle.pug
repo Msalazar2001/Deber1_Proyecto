@@ -1,0 +1,127 @@
+extends layout
+
+block content
+    doctype html
+    head
+        meta(charset='utf-8')
+        link(rel='stylesheet' href='/stylesheets/Detalle/styleguide.css')
+        link(rel='stylesheet' href='/stylesheets/Detalle/style.css')
+
+    .producto-individual
+        .navbar
+            .container
+                .content
+                    img.color-dark(src='/img/color-dark-2.svg')
+                .column
+                    .nav-links
+                        each link in navbar.links
+                            .link
+                                a(href=link.href)= link.name
+                    .actions
+                        .style-secondary
+                            button.button= buttons.login
+                        .style-primary-small
+                            button.text-wrapper= buttons.register
+
+        .product-header
+            .breadcrumbs
+                .div= breadcrumbs.viewAll
+                img.img-2(src='/img/chevron-right.svg')
+                .div= breadcrumbs.category
+                img.img-2(src='/img/chevron-right.svg')
+                .link-2= breadcrumbs.productName
+            .content-2
+                .product
+                    .column-2
+                        each image in product.images
+                            img.placeholder-image(src=image)
+                    .placeholder-image-wrapper
+                        img.placeholder-image-2(src=product.mainImage)
+                .column-3
+                    .div-2
+                        .product-name
+                            .heading= product.name
+                            .price= product.price
+                        .product-review
+                            img.stars(src='/img/stars.svg')
+                            p.div= product.rating + " &bull; " + product.reviews
+                        p.p= product.description
+                        .form
+                            .input
+                                .text-wrapper-2= options.variantLabel
+                                .type-default
+                                    .select-one= options.selectText
+                                    img.img(src='/img/chevron-down-2.svg')
+                            .input
+                                .text-wrapper-2= options.variantLabel
+                                .div-3
+                                    each option, index in options.optionsList
+                                        button.button-2= option
+                            .input
+                                .text-wrapper-2= options.quantityLabel
+                                .placeholder-wrapper
+                                    .placeholder 1
+                            .container-2
+                                .form-submit
+                                    .div-wrapper
+                                        button.button-3= buttons.addToCart
+                                    .style-secondary-2
+                                        button.button= buttons.buyNow
+                                p.text= product.shipping
+                    .accordion
+                        each section in sections
+                            .accordion-item
+                                .content-top
+                                    .heading-2= section.title
+                                    img.img(src=section.icon)
+                                .content-bottom
+                                    p.text-wrapper-3= section.text
+
+        .div-5
+            .container-3
+                .div-6
+                    .div-7
+                        .div-8
+                            .tagline-wrapper
+                                .tagline= additionalInfo.tagline
+                            .div-2
+                                p.text-wrapper-4= additionalInfo.description
+                        .list
+                            each benefit in additionalInfo.benefits
+                                .list-item
+                                    img.img-2(src=benefit.icon)
+                                    p.text-wrapper-3= benefit.text
+                    .div-9
+                        .style-secondary-3
+                            button.button= buttons.buyNow
+                        .style-link-small
+                            button.button= buttons.explore
+                            img.img(src='/img/chevron-right-2.svg')
+
+        .footer
+            .container-4
+                .div-13
+                    .content-3
+                        .join-our-newsletter= footer.newsletter
+                        p.p= footer.privacyPolicy
+                    .actions-2
+                        .div-3
+                            .type-default-2
+                                .placeholder Ingresa tu correo
+                            .style-secondary-6
+                                button.button-5= buttons.subscribe
+                .links
+                    .color-dark-wrapper
+                        img.color-dark-2(src='/img/color-dark.svg')
+                    each column in footer.footerLinks
+                        .div-11
+                            .text-wrapper-5= column.title
+                            .div-12
+                                each link in column.links
+                                    .link-3
+                                        .text-wrapper-6= link
+                .div-7
+                    .divider
+                    .div-13
+                        .div-9
+                            p.element-relume-all!= footer.rights

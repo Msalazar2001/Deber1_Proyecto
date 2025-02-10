@@ -1,0 +1,46 @@
+doctype html
+head
+  meta(charset='utf-8')
+  link(rel='stylesheet' href='/stylesheets/Signin/styleguide.css')
+  link(rel='stylesheet' href='/stylesheets/Signin/style.css')
+
+.create-acc
+  .navbar
+    .container
+      .content
+        img.color-dark(src='/img/color-dark.svg')
+      .column
+        .nav-links
+          each link in navbar.links
+            .link
+              a(href=link.href)= link.name
+        .actions
+          .style-secondary
+            button.button= buttons.login
+          .style-primary-small
+            button.text-wrapper= buttons.register
+  .contact
+    .div
+      .content-2
+        .section-title
+          .tagline-wrapper
+            .tagline= auth.tagline
+          .div-2
+            .heading= auth.heading
+            p.text= auth.description
+        .div-2
+          .input
+            .text-wrapper-2= auth.nameLabel
+            .type-default
+          .input
+            .text-wrapper-2= auth.emailLabel
+            .type-default
+          .input
+            .text-wrapper-2= auth.passwordLabel
+            .type-default
+          .selected-false
+            .checkbox
+            .label= auth.termsLabel
+          .button-wrapper
+            button.button-2= auth.submitButton
+      img.placeholder-image(src='/img/placeholder-image.png')

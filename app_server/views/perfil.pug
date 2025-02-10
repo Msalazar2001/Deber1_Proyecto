@@ -1,0 +1,126 @@
+extends layout
+
+block content
+    doctype html
+    head
+        meta(charset='utf-8')
+        link(rel='stylesheet' href='/stylesheets/Perfil/styleguide.css')
+        link(rel='stylesheet' href='/stylesheets/Perfil/style.css')
+
+    .perfil-de-usuario
+        .navbar
+            .container
+                .content
+                    img.color-dark(src='/img/image.svg')
+                .column
+                    .nav-links
+                        each link in navbar.links
+                            .link
+                                a(href=link.href)= link.name
+                .actions
+                    .style-secondary
+                        a(href=buttons.login.href)
+                            button.button= buttons.login.text
+                    .style-primary-small
+                        a(href=buttons.register.href)
+                            button.text-wrapper= buttons.register.text
+                
+        .header
+            .div
+                .short-heading-here Bienvenido, #{user.name}
+                p.p Accede a tu perfil y gestiona tus datos fácilmente.
+
+        .layout
+            .section-title
+                .tagline-wrapper
+                    .tagline= profile.tagline
+                .content-2
+                    p.heading= profile.heading
+                    p.text= profile.description
+            .row-wrapper
+                .row
+                    each section in sections
+                        .column-2
+                            img.placeholder-image(src=section.icon)
+                            .content-2
+                                p.heading-2= section.title
+                                p.text-2= section.description
+            .div-2
+                .button-wrapper
+                    button.button Guardar
+                .style-link-small
+                    button.button Ayuda
+                    img.img(src='/img/chevron-right.svg')
+
+        .container-wrapper
+            .container-2
+                .content-3
+                    .div-3
+                        .tagline-wrapper
+                            .tagline-2= history.tagline
+                        .content-4
+                            p.heading-3= history.heading
+                            p.p= history.description
+                    .div-2
+                        .button-wrapper
+                            button.button Ver
+                        .style-link-small
+                            button.button Detalles
+                            img.img(src='/img/chevron-right.svg')
+
+        .container-wrapper
+            .container-2
+                .content-3
+                    .content-4
+                        p.heading-4= returns.heading
+                        p.p= returns.description
+                    .div-3
+                        .row-2
+                            each action in returns.actions
+                                .div-4
+                                    .text-wrapper-2= action.title
+                                    p.text-wrapper-3= action.description
+
+        .container-wrapper
+            .container-2
+                .content-3
+                    .div-3
+                        .tagline-wrapper
+                            .tagline-2= preferences.tagline
+                        .content-4
+                            p.heading-3= preferences.heading
+                            p.p= preferences.description
+                    .div-2
+                        .button-wrapper
+                            button.button Guardar
+                        .style-link-small
+                            button.button Editar
+                            img.img(src='/img/chevron-right.svg')
+
+        .footer
+            .container-3
+                .div-5
+                    .content-6
+                        .join-our-newsletter= footer.newsletter
+                        p.text-wrapper-3= footer.privacyPolicy
+                    .actions-2
+                        .form
+                            .type-default
+                                .placeholder Ingresa tu correo
+                            .div-wrapper
+                                button.button-2 Suscribirse
+                .links
+                    .color-dark-wrapper
+                        img.color-dark-2(src='/img/color-dark.svg')
+                    each column in footer.links
+                        .div-4
+                            .text-wrapper-4= column.title
+                            .footer-links
+                                each link in column.links
+                                    .link-2
+                                        .text-wrapper-5= link
+                .credits
+                    .divider
+                    .div-5
+                        .div-2
+                            p.element-relume-all!= footer.rights
