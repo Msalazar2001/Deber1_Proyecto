@@ -57,4 +57,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.get('/', (req, res) => {
+  res.send('Servidor funcionando en Heroku 🚀');
+});
 module.exports = app;
